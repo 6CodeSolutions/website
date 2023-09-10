@@ -1,0 +1,101 @@
+/* ====== CUSTOM PROPERTY ====== */
+
+:root {
+  /* colors */
+  --font: hsl(0, 0%, 13%);
+  --white: hsl(0, 0%, 100%);
+
+  /* typography */
+  --ff-be-vietnam-pro: 'Be Vietnam Pro', sans-serif;
+
+  --fs-1: 1.875rem;
+  --fs-2: 1.5rem;
+  --fs-3: 1.063rem;
+  --fs-4: 0.875rem;
+  --fs-5: 0.813rem;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  /* spacing */
+  --section-padding: 60px;
+
+  /* radius */
+  --radius-4: 4px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+
+  /* transition */
+  --transition: 0.25s ease;
+  --transition-2: 0.5s ease;
+}
+
+/* ====== RESET ====== */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+img,
+span,
+input,
+button,
+ion-icon {
+  display: block;
+}
+
+input,
+button {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+}
+
+html {
+  font-family: var(--ff-be-vietnam-pro);
+  color: var(--font);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--white);
+  height: 2000px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: hsl(0, 0%, 98%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 80%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(0, 0%, 70%);
+}
