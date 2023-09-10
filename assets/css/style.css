@@ -410,6 +410,19 @@ body {
   color: var(--color-white);
 }
 
+/* ====== CONTACT ====== */
+
+.contato {
+  background: var(--color-tertiary);
+  padding-block: var(--section-padding);
+  color: var(--color-white);
+}
+
+.contato-banner { margin-bottom: 30px; }
+
+.contato .section-title { margin-bottom: 25px; color: var(--color-white);}
+
+
 /* ====== FOOTER ====== */
 
 .footer-top { padding-block: var(--section-padding); }
