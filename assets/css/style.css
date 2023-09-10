@@ -5,6 +5,7 @@
   --color-primary: hsl(181, 80%, 25%);
   --color-secondary: hsl(276, 3%, 39%);
   --color-tertiary: hsl(165, 7%, 55%);
+  --color-background: hsl(180, 3%, 92%);
   --color-font-h: hsl(0, 0%, 13%);
   --color-font-p: hsl(276, 3%, 39%);
   --color-white: hsl(0, 0%, 100%);
@@ -109,7 +110,9 @@ body {
   padding-inline: 15px;
 }
 
-.w-100 { width: 100%; }
+.w-100 {
+  width: 100%;
+}
 
 .h1,
 .h2,
@@ -118,11 +121,17 @@ body {
   line-height: 1.2;
 }
 
-.h1 { font-size: var(--fs-1); }
+.h1 {
+  font-size: var(--fs-1);
+}
 
-.h2 { font-size: var(--fs-2); }
+.h2 {
+  font-size: var(--fs-2);
+}
 
-.h3 { font-size: var(--fs-3); }
+.h3 {
+  font-size: var(--fs-3);
+}
 
 .section-text,
 .features .card-text {
@@ -149,16 +158,22 @@ body {
   background: var(--color-primary);
 }
 
-.btn > ion-icon { font-size: 16px; }
+.btn>ion-icon {
+  font-size: 16px;
+}
 
-.btn-primary:is(:hover, :focus) { background: var(--color-secondary); }
+.btn-primary:is(:hover, :focus) {
+  background: var(--color-secondary);
+}
 
 .btn-secondary {
   background: var(--color-tertiary);
   color: var(--color-white);
 }
 
-.btn-secondary:is(:hover, :focus) { background: var(--color-secondary); }
+.btn-secondary:is(:hover, :focus) {
+  background: var(--color-secondary);
+}
 
 .section-subtitle {
   color: var(--color-font-h);
@@ -270,23 +285,38 @@ body {
   padding-bottom: var(--section-padding);
 }
 
-.hero .shape { display: none; }
+.hero .shape {
+  display: none;
+}
 
-.hero-banner { margin-bottom: 30px; }
+.hero-banner {
+  margin-bottom: 30px;
+}
 
-.hero-content { text-align: center; }
+.hero-content {
+  text-align: center;
+}
 
-.hero-title
-.hero .section-text { margin-bottom: 20px; }
+.hero-title .hero .section-text {
+  margin-bottom: 20px;
+}
 
-.hero .btn { margin-inline: auto; }
+.hero .btn {
+  margin-inline: auto;
+}
 
 /* ====== FEATURES ====== */
-.features { padding-block: var(--section-padding); }
+.features {
+  padding-block: var(--section-padding);
+}
 
-.features .section-title { margin-bottom: 40px; }
+.features .section-title {
+  margin-bottom: 40px;
+}
 
-.features :is(.section-subtitle, .section-title) { text-align: center; }
+.features :is(.section-subtitle, .section-title) {
+  text-align: center;
+}
 
 .features-list {
   display: grid;
@@ -305,7 +335,9 @@ body {
   margin-bottom: 30px;
 }
 
-.features-card .card-title { margin-bottom: 15px; }
+.features-card .card-title {
+  margin-bottom: 15px;
+}
 
 .features-card .card-link {
   display: flex;
@@ -321,4 +353,59 @@ body {
 .features-card .card-link:is(:hover, :focus) {
   gap: 10px;
   color: var(--color-tertiary);
+}
+
+/* ====== SERVICES ====== */
+
+.service {
+  background: var(--color-background);
+  padding-block: var(--section-padding);
+}
+
+.service-banner {
+  margin-bottom: 30px;
+}
+
+.service-content:first-of-type {
+  padding-bottom: 50px;
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.05);
+  margin-bottom: 50px;
+}
+
+.service .section-title {
+  margin-bottom: 30px;
+}
+
+.service-item {
+  background: var(--color-white);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 20px;
+  box-shadow: 0 5px 25px 10px hsla(0, 0%, 0%, 0.02);
+  border-radius: var(--radius-8);
+}
+
+.service-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.service-item-icon {
+  background: var(--color-primary);
+  color: var(--color-white);
+  min-width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.service-item-icon ion-icon {
+  --ionicon-stroke-width: 50px;
+}
+
+.service-item:hover .service-item-icon {
+  background: var(--color-tertiary);
+  color: var(--color-white);
 }
